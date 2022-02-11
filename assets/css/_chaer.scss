@@ -1,0 +1,36 @@
+.seed{
+   width: 80%;
+   margin: 0 auto;
+//    text-align: center;
+img{
+    width: 90%;
+   }
+
+   p{
+       text-align: right;
+       width: 80%;
+       line-height: 2.5rem;
+       margin-bottom: 2rem;
+       &:last-child{
+           margin-bottom: 3rem;
+       }
+   }
+   h2{
+       margin-top: 2rem;
+       margin-bottom: 2rem;
+   }
+  
+}
+
+@media screen and(max-width:768px) {
+    .seed img{
+    width: 100%;
+
+    p{
+        text-align: center;
+        width: 0 auto;
+      
+    }
+
+}
+}

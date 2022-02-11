@@ -1,0 +1,36 @@
+.features{
+    margin: 7rem 0;
+    overflow:hidden;
+    &__content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 3rem;
+        img{
+          width: 100%;
+        }
+        .body{
+          h2{
+              margin-bottom: 3rem;
+          }
+          .btn{
+            padding: 1rem 4rem;
+            background: $limGreen;
+            color: #fff;
+            margin-top: 2rem;
+            display: inline-block;
+          }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .features{
+    &__content{
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+    }
+  }
+
+}

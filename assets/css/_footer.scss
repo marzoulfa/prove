@@ -1,0 +1,56 @@
+.footer{
+    background: $dark;
+    margin-top: -2rem;
+    color: $lightGray;
+    font-size: 1.4rem;
+    line-height: 1.7;
+    &__content{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 2rem;
+        article{
+        padding: 4rem 0;
+        h3{
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        ul{
+            a{
+                color: inherit;
+                &:hover{
+                    color: $limGreen;
+                }
+            }
+        }
+        }
+    }
+    .copyright{
+        text-align: center;
+        hr{
+            width: 50%;
+            margin: 0 auto;
+            height: 1px;
+            opacity: 0.5;
+            margin-bottom: 2rem;
+        }
+        span{
+           opacity: 0.8;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 768px) 
+{
+    .footer{
+        &__content{
+            grid-template-columns: 1fr;
+            row-gap: 1rem;
+
+            article{
+                padding: 1rem;
+            }
+        }
+    }
+}

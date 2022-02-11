@@ -1,0 +1,42 @@
+.callout{
+    background-image: url('../img/imtiyaz-ali-tohb5lsxAB8-unsplash.jpg');
+    background-image: linear-gradient(#fff, #ffffff8c), url(../img/imtiyaz-ali-tohb5lsxAB8-unsplash.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    position: relative;
+
+
+    &__content{
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        h2{
+            margin-bottom: 2rem;
+        }
+        .btn{
+            padding: 1rem 4rem;
+            background: $limGreen;
+            color: #fff;
+            margin-top: 2rem;
+            display: inline-block;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .callout__content {
+        text-align: center;
+         position: static;
+         top: unset;
+        left: unset;
+         transform: unset;
+    }
+    
+}

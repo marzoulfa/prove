@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+html{
+  font-size: 0.625rem;
+   scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: $secondary;
+}
+a{
+  text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.container{
+    // max-width: 1440px;
+    margin: 0 auto;
+    
+}
+.p-x{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.p-y{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.p-all{
+    padding: 1rem;
+}

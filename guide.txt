@@ -1,0 +1,21 @@
+//Headings 
+font-family: poppins
+h1
+font-size:48px
+
+
+h2
+font-size: 32px
+font-weight: 600
+
+h3:
+font-size: 18px
+
+
+p
+font-size: 14px
+font-weight: 300
+
+menu links 
+font-size:13 px
+font-weight:500

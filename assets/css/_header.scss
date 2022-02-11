@@ -1,0 +1,164 @@
+header{
+    article{
+        border-top: 1px solid $veryLightGray;
+        border-bottom: 1px solid $veryLightGray;
+
+    .content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+        .socail-media img
+        {
+            margin-right: 1rem;
+          width: 3rem;
+            &:hover
+            {
+                color: $limGreen;
+            }
+        }
+            .fab, .fas
+            {
+                font-size: 2rem;
+                color: $lightGray;
+              }
+    }
+
+    .info{
+     display: flex;
+     column-gap: 3.6rem;
+     color: $secondary;
+        &__item{
+        display: flex;
+        column-gap: 0.3rem;
+        align-items: center;
+        }
+    }
+  }
+
+  .navbar{
+      background-color: #f7f7f7;
+      margin-top: 1rem;
+     &__content{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         .logo
+         {
+             height: 10rem;
+             width: 20rem;
+             order: 2;
+         }
+         .show{
+             display: block!important;
+         }
+         .humburger-menu{
+             display: none;
+         }
+         .menu-links
+         {
+            
+            & li{
+    
+                        display: inline-block;
+                &:not(:last-child){
+                    margin-left: 2rem;
+                }
+             a{
+                color: $secondary;
+                transition: color 0.2s ease-in-out;
+                &:hover{
+                    color: $limGreen;
+                    border-bottom: 2px solid $limGreen;
+                }
+                &.btn{
+                    border-radius: 2.3rem;
+                    padding: 1rem 3rem;
+                    background-color: $limGreen;
+                    border-bottom: unset;
+                    color: #fff;
+                    opacity: 0.8;
+                    transition: all 0.24s ease-in-out;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+             }
+            }
+         }
+        
+         .fas.fa-bars{
+             font-size: 3.4rem;
+             color: $secondary;
+         }
+        }
+
+   
+  }
+}
+
+
+@media screen and(max-width:768px) {
+    header article {
+        display: none;
+
+    }    
+
+    .p-x{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    header{
+        article{
+            display: none;
+        }
+        .navbar{
+            .humburger-menu{
+                display: block;
+            }
+            position: relative;
+            .humburger-menu{
+                display: non;
+            }
+ 
+            .menu-links{
+              
+                display: none;
+                position: absolute;
+                top: 110px;
+                background: #fff;
+                z-index: 999;
+                width: 90%;
+                padding: 2rem;
+                -webkit-transform: translate(-50px, -50px);
+                transform: translate(0px, 0);
+                
+                li{
+                    display: block;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
+
+// @media screen and (min-width:768px) {
+//     header{
+//         article{
+//             display: none;
+//         }
+//         .navbar{
+//             position: relative;
+//             .humburger-menu{
+//                 display: block;
+//             }
+
+//             .menu-links{
+//                 position: absolute;
+//                 top: -10rem;
+//                 background: red;
+//             }
+//         }
+//     }
+    
+// }

@@ -1,0 +1,57 @@
+.populars{
+   
+    background-color: #f1f1f1;
+    padding: 4rem 0;
+        text-align: center;
+    h2{
+        margin-bottom: 2rem;
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 8rem;
+            height: 0.3rem;
+            background-color: $primary;
+            margin-right: 0.4rem;
+        }
+        &::after{
+            content: "";
+            display: inline-block;
+            width: 8rem;
+            height: 0.3rem;
+            background-color: $primary;
+            margin-left:0.4rem ;
+            
+        }
+    }
+    &__content{
+
+        .popular{
+             position: relative;
+             cursor: pointer;
+             transition: all 0.23s ease-in-out;
+             &:hover::before{
+                background: transparent;
+              
+            }
+         &::before{
+             content: "";
+             position: absolute;
+             top: 0;
+             left: 0;
+             right: 0;
+             bottom: 0;
+             background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+          
+         }
+         span{
+            position: absolute;
+            top: 50%;
+            transform: translate(-50px, -50px);
+            color: #fff;
+            font-size: 2rem;
+          
+         }
+            
+        }
+    }
+}

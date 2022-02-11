@@ -1,0 +1,55 @@
+.poping-cards{
+    position: relative;
+    top: -10rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    .pop__card{
+        background: #fff;
+        box-shadow: 1px 1px 2px 1px lightgrey;
+        width: 70%;
+        padding: 2rem 0;
+       &:hover{
+           transition: all 0.24s ease-in-out;
+           background: $limGreen;
+           .icon i,.description{
+               color: #fff;
+           }
+       }
+     
+        .icon{
+            display: inline-block;
+            border: 2px solid $limGreen;
+            border-radius: 50%;
+            padding: 2rem;
+            margin-bottom: 2rem;
+         .fab,.fas,.far{
+             font-size: 3rem;
+             color: $limGreen;
+         }
+        }
+        .description{
+            display: block;
+           font-size: 2rem;
+           font-weight: 500;
+           color: $dark;
+           margin-bottom: 2rem;
+        }
+       
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .poping-cards{
+       flex-direction: column;
+        top: -2rem;
+       .pop__card:not(:last-child){
+             margin-bottom: 1rem;
+       }
+    }
+    
+}
